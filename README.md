@@ -1,2 +1,0 @@
-# managementapplication
-Management application
