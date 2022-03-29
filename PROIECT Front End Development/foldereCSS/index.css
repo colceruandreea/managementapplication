@@ -1,0 +1,176 @@
+table {
+    border: 1px solid black;
+    width: 96%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    background-color: rgb(221, 247, 247);
+    border-bottom: 1px solid black;
+}
+
+.addEmpButton{
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.addEmpButton:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+.addEmpButton:active {
+	position:relative;
+	top:1px;
+}
+.addEmpButton:disabled {
+    box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:grey;
+	background-color:grey;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;	
+	text-shadow:0px 1px 0px #528ecc;
+}
+
+.saveEditButton {
+	display: none;
+}
+
+
+.add_container {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+
+.cancelButton {
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.cancelButton:hover {
+	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+	background-color:#e4685d;
+}
+.cancelButton:active {
+	position:relative;
+	top:1px;
+}
+
+.el_container {
+    display: flex;
+    margin-bottom: 8px;
+
+}
+
+.add_form_container {
+    margin-top: 30px;
+    margin-left: 10px;
+    display: none;
+}
+.el_label {
+    width: 80px;
+
+
+}
+
+.error_txt {
+    color:red;
+    display: none;
+    margin-left: 10px;
+}
+
+.input_error {
+    
+     border: 1px solid red;
+	 
+}
+.no_emp_container {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 20px;
+	display: none;
+}
+
+.deleteButton {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:9px;
+	padding:4px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.deleteButton:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.deleteButton:active {
+	position:relative;
+	top:1px;
+}
+
+.editButton{
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+	margin-right: 5px;
+}
+.editButton:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+.editButton:active {
+	position:relative;
+	top:1px;
+}
+
+.emp_link {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}

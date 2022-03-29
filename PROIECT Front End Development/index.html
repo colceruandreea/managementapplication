@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <title>Project Management Application-employees</title>
+      <script src="folderJS/main.js"></script>
+    <link rel="stylesheet" href="foldereCSS/common.css">
+    <link rel="stylesheet" href="foldereCSS/index.css">
+</head>
+<body onload="doStartupConfig()">
+  
+<div class="menu_bar"> 
+     <div class="img_container">
+        <img src="beach.jpg" alt="o plaja" width="50px" height="50px">
+      </div> 
+     <div class="company_title">
+        Company
+      </div>
+     <div class="menu_item active">
+       <a href="index.html" class="menu_item_link">Employees</a>
+         
+       </div>
+       <div class="menu_item">
+         
+        <a href="projects.html" class="menu_item_link">Projects</a>
+  
+      </div>
+</div>
+
+<div class="add_container" id="add_container">
+  <button class="addEmpButton" onclick="displayAddForm()">Add New Employee</button>
+</div>
+
+
+
+
+<div class="add_form_container" id="add_form_container">
+
+  <form id="add_form">
+<!-- -------------------------------------------------------------- -->
+
+     <div class="el_container">
+       <div class="el_label">
+        Name:
+     </div>
+       <input type="text" name="Name"  id="name" onkeyup="checkName()" >
+       <div class="error_txt" id="name_error">You must add a name</div>
+     </div>
+<!-- -------------------------------------------------------------- -->
+      <div class="el_container">
+        <div class="el_label">
+          Age:
+      </div>
+        <input type="text" name="age" id="age" placeholder="18-65" onkeyup="checkAge()">
+        <div class="error_txt" id="age_error">You must add age between 18 and 65</div>
+      </div>
+<!-- -------------------------------------------------------------- -->
+
+    <div class="el_container">
+      <div class="el_label">
+        Birthdate:
+    </div>
+    <input type="text" name="birthdate" id="birthdate" placeholder="YYYY-MM-DD" onkeyup="checkElement('birthdate')">
+    <div class="error_txt" id="birthdate_error">You must use the suggested format</div>
+    </div>
+<!-- -------------------------------------------------------------- -->
+<div class="el_container">
+  <div class="el_label">
+    Phone:
+</div>
+<input type="text" name="phone" id="phone" placeholder="07xx xxx xxx" onkeyup="checkElement('phone')">
+<div class="error_txt" id="phone_error">You must use the suggested format</div>
+</div>
+<!-- -------------------------------------------------------------- -->
+<div class="el_container">
+  <div class="el_label">
+    Email:
+</div>
+<input type="text" name="email" id="email" placeholder="example@email.com" onkeyup="checkElement('email')">
+<div class="error_txt" id="email_error">You must use the suggested format</div>
+</div>
+<!-- -------------------------------------------------------------- -->
+
+
+
+
+
+<div>
+  <button class="cancelButton" onclick="cancelAddForm()" type="button">Cancel</button>
+  <button class="addEmpButton" onclick="addNewUser()" type="button" disabled id="add_button">Add</button>
+  <button class="addEmpButton saveEditButton" onclick="saveEditEmp()" type="button" disabled id="edit_button">Edit</button>
+  <button type="submit" style="display:none;">Submit</button>
+</div>
+
+   
+  </form>
+</div>
+
+
+
+
+  <div id="no_emp_container" class="no_emp_container">
+
+        No employees saved yet.
+  </div>
+<div class="table_container" id="table_container">
+
+     <table id="employees_table" cellspacing="0" cellpadding="7"></table>
+
+
+</div>
+
+
+
+</body>
+</html>

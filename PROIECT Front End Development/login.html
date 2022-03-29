@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Login to Project Management Application</title>
+    <script src="folderJS/login.js"></script>
+    <link rel="stylesheet" href="foldereCSS/login.css">
+</head>
+<body onload="checkLoggedUser()">
+    
+    <div class="login_container">
+        <h3>Please login</h3>
+     <div class="input_field">
+         <span class="input_label">
+            Username:
+         </span>
+          <input type="text" name="username" id="username" >
+     </div>
+      <div class="input_field">
+          <span class="input_label">
+            Password:
+          </span>
+     <input type="password"  name="password" id="password">
+     </div>
+     
+     <div class="succes_msg msj_text" id="try_succes">Login succesful...redirecting</div>
+     <div class="error_msg msj_text" id="try_error">Wrong credentials...please try again</div>
+
+      <div class="button_container">
+          <button class="myButton" onclick="checkUserPass()">LOGIN</button>
+      </div>
+    
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>

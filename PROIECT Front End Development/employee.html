@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="foldereCSS/common.css">
+    <link rel="stylesheet" href="foldereCSS/emp.css">
+    <script src="folderJS/employee.js"></script>
+    <title>Project Management Aplication-Employee details</title>
+</head>
+<body onload="doStartUpConfig()">
+    
+    <div class="menu_bar"> 
+        <div class="img_container">
+           <img src="beach.jpg" alt="o plaja" width="50px" height="50px">
+         </div> 
+        <div class="company_title">
+           Company
+         </div>
+        <div class="menu_item">
+          <a href="index.html" class="menu_item_link">Employees</a>
+            
+          </div>
+          <div class="menu_item">
+            
+           <a href="projects.html" class="menu_item_link">Projects</a>
+     
+         </div>
+   </div>
+
+
+<h3 id="emp_name"></h3>
+<div class="prj_container">
+    <div class="prj_label">
+        Project:
+    </div>
+    <div>
+        <select onchange="saveEmpProject()" id="sel_prj"> </select>
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>

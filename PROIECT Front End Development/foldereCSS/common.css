@@ -1,0 +1,47 @@
+.img_container {
+    margin-left: 5px;
+}
+
+
+.menu_bar {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(153, 190, 224);
+    align-items: center;
+    box-shadow: 5px 7px 5px rgba(240, 118, 213, 0.3);
+}
+
+.company_title {
+    margin-left: 15px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu_item {
+    margin-left: 10px;
+}
+
+.menu_item_link {
+font-size: 16px;
+color: navy;
+text-decoration: none;
+border-radius: 10px;
+border: 1px solid pink;
+padding: 16px;
+box-shadow: 2px 2px 1px;
+
+}
+
+
+.menu_item_link:hover {
+    color:blueviolet;
+    /* background-color: palevioletred; */
+}
+
+.active {
+    background-color: palevioletred;
+
+   
+}
